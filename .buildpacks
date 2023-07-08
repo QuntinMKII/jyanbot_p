@@ -1,0 +1,4 @@
+heroku/python
+https://github.com/stomita/heroku-buildpack-phantomjs
+https://github.com/heroku/heroku-buildpack-google-chrome
+https://github.com/heroku-buildpack-chromedriver

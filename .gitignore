@@ -1,0 +1,9 @@
+/bin/phantomjs
+.idea
+venv
+*.pyc
+lib
+creds.json
+lineapi.json
+openai
+weather

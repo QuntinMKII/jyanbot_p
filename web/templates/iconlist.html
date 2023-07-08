@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'header.html' %}
+  <style>
+    * {
+      font-family: Microsoft JhengHei, sans-serif;
+    }
+    .link-col {
+      word-break: break-all;
+    }
+  </style>
+  <body>
+    <div class="container my-5">
+      <button onclick="loadPicture()" id="button" class="btn btn-primary my-3">
+        開圖 (注意流量)
+      </button>
+      <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th class="w-25">keyword</th>
+            <th class="link-col">picture</th>
+            <th>Times</th>
+          </tr>
+        </thead>
+        {% for row in iconlist %}
+        <tr>
+          <td>{{ row.keyword }}</td>
+          <td class="link-col">
+            <a href="{{ row.link }}" target="_blank" class="iconLink">
+              {{ row.link }}
+            </a>
+            <!-- <a href="{{ row.link }}" target="_blank">
+            <img
+              src="{{ row.link }}"
+              alt="{{ row.keyword }}"
+              style="height: 128px;"
+            />
+          </a> -->
+          </td>
+          <td>{{ row.counting }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </body>
+  <script>
+    function loadPicture() {
+      const iconLinks = document.getElementsByClassName('iconLink')
+      for (const iconLink of iconLinks) {
+        let link = iconLink.innerHTML
+        iconLink.innerHTML = `<img src="${link}" alt="${link}" style="height: 128px;" />`
+      }
+      const button = document.getElementById('button')
+      button.style.display = 'none'
+    }
+  </script>
+</html>
