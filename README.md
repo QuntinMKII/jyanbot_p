@@ -6,7 +6,8 @@
 
 ## 綜合更新日誌
 - 200716 新增patchnote函數
-
+- 2305   move from heroku to render
+- 230708 copy a public version
 ## Todo
 
 Trello 連結 -> N/A CC
@@ -44,10 +45,11 @@ Trello 連結 -> N/A CC
 
 > ~~雖然大家能看到這篇應該都是能進來了~~並沒有
 
-- 申請[heroku](https://www.heroku.com/)帳號
-- 提供信箱給仕延開權限
-- 打開 heroku 頁面找到 jyanbot
-- 剩下參考 deploy 標籤寫的
+- ~~申請[heroku](https://www.heroku.com/)帳號~~
+- ~~提供信箱給仕延開權限~~
+- ~~打開 heroku 頁面找到 jyanbot~~
+- ~~剩下參考 deploy 標籤寫的~~
+- 已移到 Render
 
 ## 開發者
 
